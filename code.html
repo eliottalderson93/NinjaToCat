@@ -5,20 +5,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
-            var ninja = true;
             $('img').click(function(){
-                var cat = $(this).attr('data-alt-src');
                 var ninja_img = $(this).attr('src');
-                if(ninja == true){
-                    $(this).attr('src',cat);
-                    $(this).attr('data-alt-src',ninja_img);
-                }
-                else{
-                    $(this).attr('src',ninja_img);
-                    $(this).attr('src',cat);
-                }
-                console.log(ninja);
-                ninja = !(ninja);
+                $(this).attr('src',$(this).attr('data-alt-src'));
+                $(this).attr('data-alt-src',ninja_img);
             });
         });
     </script>
