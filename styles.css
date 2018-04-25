@@ -1,0 +1,31 @@
+/*This is a default CSS document*/
+*{
+    padding:0px;
+    margin:0px;
+}
+/*This is the start of the webpage*/
+.wrapper{
+    min-height:1000px;
+    min-width:1000px;
+    background-color:black;
+}
+    /*Define the classes below*/
+    h1{
+        text-align:Center;
+        color:skyblue;
+        background-color:black;
+    }
+    .wrapper div{
+        height:600px;
+        max-width:450px;
+        margin:auto;
+        background-color:midnightblue;
+        padding:20px;
+    }
+        div img{
+            height:100px;
+            width:400px;
+            margin-bottom:10px;
+            margin-left:23px;
+            margin-top:10px;
+        }
